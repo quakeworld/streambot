@@ -1,4 +1,4 @@
-# QuakeWorld streambot [![Test](https://github.com/vikpe/qw-streambot/actions/workflows/test.yml/badge.svg)](https://github.com/vikpe/qw-streambot/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/vikpe/qw-streambot/branch/main/graph/badge.svg)](https://codecov.io/gh/vikpe/qw-streambot) [![Go Report Card](https://goreportcard.com/badge/github.com/vikpe/qw-streambot)](https://goreportcard.com/report/github.com/vikpe/qw-streambot)
+# QuakeWorld streambot [![Test](https://github.com/quakeworld/streambot/actions/workflows/test.yml/badge.svg)](https://github.com/quakeworld/streambot/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/quakeworld/streambot/branch/main/graph/badge.svg)](https://codecov.io/gh/quakeworld/streambot) [![Go Report Card](https://goreportcard.com/badge/github.com/quakeworld/streambot)](https://goreportcard.com/report/github.com/quakeworld/streambot)
 
 > Setup for automated QuakeWorld client accepting commands via Twitch chat.
 
@@ -9,7 +9,7 @@
 
 ## How does it work? (TLDR version)
 
-ezQuake reads from a pipe located at `/tmp/ezquake_[username]` on posix systems, where `username` is the username of the user who started the ezQuake process. 
+ezQuake reads from a pipe located at `/tmp/ezquake_[username]` on posix systems, where `username` is the username of the user who started the ezQuake process.
 
 So basically all you have to do is to write commands to `/tmp/ezquake_[username]`.
 
@@ -78,7 +78,7 @@ See [`internal/app/twitchbot/twitchbot.go`](https://github.com/vikpe/qw-streambo
     &client_id=CLIENT_ID
     &redirect_uri=http://localhost:3000
     &scope=channel%3Amanage%3Abroadcast
-    ``` 
+    ```
   * Chatbot access token to read and write to chat, scopes: `chat:read` and `chat:edit`.
 * ZeroMQ: `apt-get install libzmq3-dev`
 
@@ -120,7 +120,7 @@ go build
 Example: start the proxy.
 
 ```shell
-./cmd/proxy/proxy 
+./cmd/proxy/proxy
 ```
 
 **App controller scripts**
