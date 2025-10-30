@@ -7,10 +7,10 @@ jobs:
     timeout-minutes: 4
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-go@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
         with:
-          go-version: 1.20.x
+          go-version: 1.25.x
 
       - name: Install requirements
         run: sudo apt-get install libzmq3-dev -y
